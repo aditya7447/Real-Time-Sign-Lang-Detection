@@ -63,12 +63,12 @@ To install and update project dependencies
      ```
      Real-Time-Sign-Lang-Detection\ReactComputerVisionTemplete
      ```
-```bash
-# Install dependencies
-npm install
+     ```bash
+      # Install dependencies
+      npm install
 
-# Update dependencies to their latest versions
-npm update
+      # Update dependencies to their latest versions
+      npm update
 
-# Rebuild native Node.js modules (if needed)
-npm rebuild
+      # Rebuild native Node.js modules (if needed)
+      npm rebuild
