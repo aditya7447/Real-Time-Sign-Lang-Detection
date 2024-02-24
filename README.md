@@ -17,13 +17,12 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
      Real-Time-Sign-Lang-Detection\Tensorflow\workspace\models\my_ssd_mobnet\converted
      ```
    - Upload all files from this directory to the root of your S3 bucket.
-   - Ensure that the necessary CORS configurations allow access to your model.
 
 3. **Make Model Public:**
    - In the S3 bucket, select the uploaded model files.
    - In the "Actions" menu, choose "Make public" or configure appropriate permissions.
-   - Uncheck Block public access in Permission for your S3 Bucket to allow it publically accessible
-   - Add the Bucket policy
+   - Uncheck 'Block public access' in the Permissions for your S3 Bucket to allow it to be publicly accessible.
+   - Add the Bucket policy.
 
    [Watch this tutorial for making your S3 bucket public by adding a policy on YouTube](https://youtu.be/sWOkwp4Kd_I?si=JHeDoRvt7c5uB4UA).
 
@@ -51,7 +50,7 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
 
 4. **Get Model URL:**
    - Obtain the URL of your model (e.g., `https://your-s3-bucket-name.s3.amazonaws.com/model.json`).
-   - Paste the URL in App.js file for line no. 20
+   - Paste the URL in App.js file at line no. 20.
      ```
      const net = await tf.loadGraphModel('Paste model object url here in App.js file at line no. 20')
      ```
