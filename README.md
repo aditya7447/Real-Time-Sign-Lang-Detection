@@ -59,7 +59,7 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
 ## 2. Install and Update Dependencies
 
 To install and update project dependencies
-   - Navigate to the following directory and run the following commands in the Terminal:
+   - Navigate to the following directory in the VS Code Terminal and run the following commands to install the required packages and libraries.
      ```
      Real-Time-Sign-Lang-Detection\ReactComputerVisionTemplete
      ```
