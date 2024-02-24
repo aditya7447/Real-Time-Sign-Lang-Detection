@@ -7,7 +7,7 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
 1. **Create an Amazon S3 Bucket:**
    - Log in to your AWS Management Console.
    - Navigate to the Amazon S3 service.
-   - Create a new S3 bucket or use an existing one.
+   - Create a new S3 bucket.
 
    [Watch this tutorial for creating an S3 bucket on YouTube](https://youtu.be/MwFH65uTMXw?si=mTvfMSELhTzCkrPe).
 
@@ -22,11 +22,10 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
 3. **Make Model Public:**
    - In the S3 bucket, select the uploaded model files.
    - In the "Actions" menu, choose "Make public" or configure appropriate permissions.
+   - Uncheck Block public access in Permission for your S3 Bucket to allow it publically accessible
+   - Add the Bucket policy
 
    [Watch this tutorial for making your S3 bucket public by adding a policy on YouTube](https://youtu.be/sWOkwp4Kd_I?si=JHeDoRvt7c5uB4UA).
-
-4. **Get Model URL:**
-   - Obtain the URL of your model (e.g., `https://your-s3-bucket-name.s3.amazonaws.com/model.json`).
 
 5. **CORS Configuration:**
    - Add the following CORS configuration to your S3 bucket:
@@ -49,10 +48,22 @@ To host your model on Amazon S3 presented in the converted folder, follow these 
            ]
        }
    ]
+
+4. **Get Model URL:**
+   - Obtain the URL of your model (e.g., `https://your-s3-bucket-name.s3.amazonaws.com/model.json`).
+   - Paste the URL in App.js file for line no. 20
+     ```
+     const net = await tf.loadGraphModel('Paste model object url here in App.js file at line no. 20')
+     ```
+
+     
 ## 2. Install and Update Dependencies
 
-To install and update project dependencies, run the following commands:
-
+To install and update project dependencies
+   - Navigate to the following directory and run the following commands in the Terminal:
+     ```
+     Real-Time-Sign-Lang-Detection\ReactComputerVisionTemplete
+     ```
 ```bash
 # Install dependencies
 npm install
