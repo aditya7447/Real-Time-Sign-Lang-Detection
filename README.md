@@ -72,3 +72,6 @@ To install and update project dependencies
 
       # Rebuild native Node.js modules (if needed)
       npm rebuild
+
+      # Run the app
+      npm start
